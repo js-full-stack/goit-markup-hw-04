@@ -1,0 +1,382 @@
+/* Общее оформление контента */
+
+:root {
+  /* Цвета текста */
+  --primary-text-color: #757575;
+  --header-text-color: #212121;
+  --accent-blue-color: #2196f3;
+  --accent-white-color: #ffffff;
+  --accent-black-color: #000000;
+  --accent-rgba-color: rgba(255, 255, 255, 0.6);
+  /* Цвета фона */
+  --primary-bck-color: #ffffff;
+  --secondary-bck-color: #2f303a;
+  --bck-section-white: #f5f4fa;
+  /* Стили шрифтов */
+  --letter: 0.03em;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--primary-bck-color);
+  letter-spacing: var(--letter);
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-section {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--header-text-color);
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-text-color);
+}
+
+.font-style {
+  font-style: normal;
+}
+
+.white-text {
+  color: var(--accent-white-color);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.mg-zero {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+/* Логотип */
+.logo {
+  margin-right: 93px;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--accent-black-color);
+}
+
+.accent-color {
+  color: var(--accent-blue-color);
+}
+
+/* Навигация */
+.nav-and-contacts {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.flex-header,
+.flex-nav,
+.site-nav,
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav > .item:not(:last-child),
+.contacts > .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.flex-nav {
+  margin-right: auto;
+}
+
+.site-nav .link {
+  color: var(--header-text-color);
+}
+
+.contacts .link {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link.current,
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-blue-color);
+}
+
+/* Герой */
+.wrap-hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: center;
+  background-color: var(--secondary-bck-color);
+}
+
+.banner {
+  max-width: 696px;
+}
+
+.header-hero {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.37;
+  text-transform: uppercase;
+  color: var(--accent-white-color);
+}
+
+.header-hero,
+.wrap-hero .button {
+  letter-spacing: 0.06em;
+}
+
+/* Кнопка под блоком-героем */
+.button {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  font-size: 16px;
+  line-height: 1.9;
+  font-weight: 700;
+  background-color: var(--accent-blue-color);
+}
+
+/* Обертки для секций */
+
+.wrap-why-we {
+  padding-top: 94px;
+}
+
+.wrap-about-us,
+.wrap-our-team {
+  padding-top: 94px;
+  padding-bottom: 124px;
+}
+
+.wrap-our-team {
+  background-color: #f5f4fa;
+}
+
+/* Наши преимущества */
+
+.list-why-we {
+  display: flex;
+}
+
+.list-why-we > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.hidden-title {
+  display: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.subtitle-why-we {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* Чем мы занимаемся */
+.about-us {
+  display: flex;
+}
+
+.about-us .item {
+  width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
+}
+
+.about-us .item:last-child {
+  margin-right: 0;
+}
+
+/* Наша команда */
+.subtitle-our-team {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--header-text-color);
+}
+
+.our-team {
+  display: flex;
+  text-align: center;
+}
+
+.our-team .item {
+  width: calc((100% - 30px * 3) / 4);
+  margin-right: 30px;
+}
+
+.our-team .item:last-child {
+  margin-right: 0px;
+}
+
+.text-our-team {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+  color: var(--primary-text-color);
+}
+
+.indent-pic {
+  margin-bottom: 30px;
+}
+
+/* Портфолио */
+/* Обертка */
+.wrap-my-project {
+  padding-top: 94px;
+  padding-bottom: 114px;
+}
+
+/* Кнопки */
+.radio-btn {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.btn {
+  padding: 6px 22px;
+  border: none;
+  min-width: 73px;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.63;
+  letter-spacing: var(--letter);
+  color: var(--header-text-color);
+  background-color: var(--primary-bck-color);
+}
+
+.radio-btn .item:not(:first-child) {
+  margin-left: 8px;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--accent-white-color);
+  background-color: var(--accent-blue-color);
+}
+
+/* Список портфолио */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio .item {
+  width: calc((100% - 30px * 2) / 3);
+}
+
+.portfolio .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.portfolio .item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 50px;
+}
+
+.img-portfolio {
+  padding-bottom: 20px;
+}
+
+.desc-portfolio {
+  margin-left: 24px;
+}
+
+.title-portfolio {
+  margin-top: 0px;
+  margin-bottom: 4px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--header-text-color);
+}
+
+.text-portfolio {
+  line-height: 1.88;
+  color: var(--primary-text-color);
+}
+
+/* Футер */
+.wrap-footer {
+  background-color: var(--secondary-bck-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.grid-contacts {
+  width: 231px;
+}
+
+.wrap-footer .link {
+  color: var(--accent-rgba-color);
+}
+
+.logo-footer-marg {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.address-marg {
+  margin-bottom: 9px;
+  margin-top: 0;
+}
+
+.address {
+  line-height: 1.46;
+}
+
+/* Цвет фона всегда под фоновым изображением */
+.sadf {
+  background-color: #000000;
+  background-image: url("../images/");
+  background-repeat: no-repeat;
+  background-position: x0 y0 или center/left/right или left 20px / right 20px;
+  background-size: auto/20 px/ или cover/contain;
+}
