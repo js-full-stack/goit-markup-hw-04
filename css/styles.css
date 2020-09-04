@@ -82,7 +82,7 @@ img {
 
   font-family: "Raleway", sans-serif;
   font-size: 26px;
-  font-weight: 700;
+  /* font-weight: 700; */
   line-height: 1.2;
   color: var(--accent-black-color);
 }
@@ -138,12 +138,24 @@ img {
   color: var(--accent-blue-color);
 }
 
-.icon-address {
-  width: 12px;
+.icon-post {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-tel {
+  width: 10px;
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
+
+/* .icon-address {
+  margin-right: 10px;
+  fill: currentColor;
+} */
 
 /* Герой */
 .wrap-hero {
@@ -202,7 +214,8 @@ img {
 
 .wrap-about-us,
 .wrap-our-team,
-.wrap-regular-costumers {
+.wrap-regular-costumers,
+.wrap-my-project {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -412,12 +425,6 @@ img {
 }
 
 /* Портфолио */
-/* Обертка */
-.wrap-my-project {
-  padding-top: 94px;
-  padding-bottom: 114px;
-}
-
 /* Кнопки */
 .radio-btn {
   display: flex;
@@ -434,7 +441,6 @@ img {
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
-  text-align: center;
   line-height: 1.63;
   letter-spacing: var(--letter);
   color: var(--header-text-color);
