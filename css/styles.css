@@ -437,6 +437,7 @@ img {
   padding: 6px 22px;
   border: none;
   min-width: 73px;
+  border-radius: 4px;
 
   font-family: inherit;
   font-size: 16px;
@@ -444,7 +445,7 @@ img {
   line-height: 1.63;
   letter-spacing: var(--letter);
   color: var(--header-text-color);
-  background-color: var(--primary-bck-color);
+  background-color: var(--bck-section-white);
 }
 
 .radio-btn .item:not(:first-child) {
