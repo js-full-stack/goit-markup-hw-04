@@ -17,17 +17,17 @@
   <body>
     <!-- Навигация и контакты -->
     <header class="nav-and-contacts">
-      <div class="container flex-header line-bottom">
+      <div class="container flex-header">
         <nav class="flex-nav">
           <a class="link logo" href="./index.html">
             <span class="accent-color">Web</span>Studio</a
           >
           <ul class="list site-nav text">
             <li class="item">
-              <a class="link" href="./index.html">Студия</a>
+              <a class="link current" href="./index.html">Студия</a>
             </li>
             <li class="item">
-              <a class="link current" href="./portfolio.html">Портфолио</a>
+              <a class="link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="item"><a class="link" href="">Контакты</a></li>
           </ul>
@@ -38,11 +38,19 @@
           <ul class="list text contacts">
             <li class="item">
               <a class="link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+                ><svg class="icon-address icon-post">
+                  <use href="./images/symbol-defs.svg#icon-post"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
             <li class="item">
-              <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="link" href="tel:+380961111111">
+                <svg class="icon-address">
+                  <use href="./images/symbol-defs.svg#icon-tel"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
         </address>
@@ -52,7 +60,7 @@
     <main>
       <section class="wrap-my-project">
         <div class="container">
-          <h1 class="hidden-title">Выполненные проекты</h1>
+          <!-- <h1 class="hidden-title">Выполненные проекты</h1> -->
           <ul class="list radio-btn">
             <li class="item"><button class="btn" type="button">Все</button></li>
             <li class="item">
@@ -73,8 +81,12 @@
           <ul class="list portfolio">
             <li class="item">
               <a class="link" href="">
-                <img class="img-portfolio" src="./images/portfolio-1.jpg
-                alt="Страница сайта" width="370" />
+                <img
+                  class="img-portfolio"
+                  src="./images/portfolio-1.jpg"
+                  alt="Страница сайта"
+                  width="370"
+                />
 
                 <div class="desc-portfolio">
                   <h2 class="title-portfolio">Технокряк</h2>
@@ -203,13 +215,13 @@
 
     <!-- Футер -->
     <footer class="wrap-footer">
-      <div class="container">
-        <a class="link logo logo-footer-marg" href="./index.html">
-          <span class="accent-color">Web</span
-          ><span class="white-text">Studio</span>
-        </a>
-        <div class="grid-contacts">
-          <address class="text white-text font-style">
+      <div class="container footer-flexbox">
+        <div class="footer-address">
+          <a class="link logo logo-footer-marg" href="./index.html">
+            <span class="accent-color">Web</span
+            ><span class="white-text">Studio</span>
+          </a>
+          <address class="text white-text font-style grid-contacts">
             <p class="address-marg address-line">
               г. Киев, пр-т Леси Украинки, 26
             </p>
@@ -219,11 +231,56 @@
                   >info@example.com</a
                 >
               </li>
-              <li>
+              <li class>
                 <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
+        </div>
+        <div class="sec-action">
+          <b class="call-to-action">Присоединяйтесь</b>
+          <ul class="list social-list">
+            <li class="item-soc">
+              <a
+                class="link social-link social-link-footer"
+                href="www.instagram.com"
+              >
+                <svg class="icon-social">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-soc">
+              <a
+                class="link social-link social-link-footer"
+                href="https://twitter.com"
+              >
+                <svg class="icon-social">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-soc">
+              <a
+                class="link social-link social-link-footer"
+                href="www.facebook.com"
+              >
+                <svg class="icon-social">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-soc">
+              <a
+                class="link social-link social-link-footer"
+                href="ru.linkedin.com"
+              >
+                <svg class="icon-social">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
